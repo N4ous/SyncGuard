@@ -13,7 +13,9 @@
 
 **Built by [Shahariar Nawous](https://github.com/N4ous)**
 
-[Get the 2.0.1 testing APK](https://github.com/N4ous/SyncGuard/releases/tag/v2.0.1-testing) · [Read the changelog](https://github.com/N4ous/SyncGuard/releases/tag/v2.0.1-testing#release-notes)
+### [⬇️ Download SyncGuard 2.0.1 APK](https://github.com/N4ous/SyncGuard/releases/download/v2.0.1-testing/SyncGuard-2.0.1-debug-testing.apk)
+
+[View release notes and changelog](https://github.com/N4ous/SyncGuard/releases/tag/v2.0.1-testing)
 
 </div>
 
@@ -47,11 +49,11 @@ Android users who experience late or inconsistent notifications, especially on p
 
 ## 📥 Download and install
 
-The current build is **version 2.0.1 (version code 2)**, published as a GitHub pre-release for testing:
+### [Download the SyncGuard 2.0.1 APK directly](https://github.com/N4ous/SyncGuard/releases/download/v2.0.1-testing/SyncGuard-2.0.1-debug-testing.apk)
 
-**[Open SyncGuard 2.0.1 testing release and download APK](https://github.com/N4ous/SyncGuard/releases/tag/v2.0.1-testing)**
+This is a **debug-signed testing build**, not a production release. See the [release notes, changelog, and checksums](https://github.com/N4ous/SyncGuard/releases/tag/v2.0.1-testing) before installing.
 
-The release page includes the changelog, SHA-256 checksum, signing certificate fingerprint, known limitations, and the `SyncGuard-2.0.1-debug-testing.apk` asset. Minimum Android version is 8.0 (API 26); target SDK is 35.
+The current build is **version 2.0.1 (version code 2)**. Minimum Android version is 8.0 (API 26); target SDK is 35.
 
 To install, download the APK on your Android device and open it. Android may ask you to permit installation from the browser or file manager. Only install APKs you trust. If a production-signed SyncGuard build is already installed, the debug-signed test build may not update it in place; Android signing rules can require uninstalling the other build first, which can remove its app data.
 
