@@ -61,43 +61,22 @@ Screenshots are **not yet included in this repository**. I want the gallery to s
 
 ## 📥 Install or build
 
-### Install a published release
+### Current repository contents
 
-When a signed APK is published, find it in this repository's **Releases** section, review the release notes, and install only a build you trust. Android may ask you to permit installation from the browser or file manager you use.
+This GitHub repository currently contains the README only. **The Android project source and an installable APK have not been uploaded here yet**, so you cannot build or install SyncGuard from this repository at this time. I will update this section when the project source or a signed release is published.
 
-> **Release availability:** This repository currently does not include a published installable release APK. You can build the debug app from source using the steps below.
-
-### Build from source
-
-**Requirements**
+### Build requirements (when source is available)
 
 - Android Studio
 - Android SDK Platform 35
 - An Android device or emulator running Android 8.0 (API 26) or newer
 - A JDK supported by the project's Android Gradle Plugin
 
-1. Clone this repository and open the project folder containing `settings.gradle.kts` in Android Studio.
-2. Allow Gradle to sync.
-3. Connect a device or start an emulator.
-4. Run the `app` configuration.
-
-To build a debug APK from the project folder:
-
-**Windows PowerShell**
-
-```powershell
-.\gradlew.bat :app:assembleDebug
-```
-
-**macOS / Linux**
-
-```bash
-./gradlew :app:assembleDebug
-```
-
-The debug APK is created at `app/build/outputs/apk/debug/app-debug.apk`. It is intended for development and testing, not as a signed production release.
+Once the Android project is available, the debug APK can be built from its project folder with `:app:assembleDebug` using the Gradle wrapper. A debug build is for development and testing, not a signed production release.
 
 ## 🚀 Getting started
+
+When an installable build is available:
 
 1. Open **Home** and review the access and device status card.
 2. Select the apps you want to troubleshoot.
@@ -130,25 +109,13 @@ Review Android's permission/access screens before granting access. You can revok
 
 ## 🛠️ Technology
 
-- Kotlin and Kotlin Coroutines
-- Jetpack Compose and Material 3
-- MVVM, `StateFlow`, and Compose Navigation
-- Room for local test and resync history
-- DataStore for local preferences
-- Android notification APIs and safe system Settings intents
-
-Run unit tests, assemble the debug APK, and run Android lint:
-
-```bash
-./gradlew :app:testDebugUnitTest :app:assembleDebug :app:lintDebug
-```
-
-On Windows, run the same tasks with ` .\gradlew.bat` (without the leading space).
+The Android app is built with Kotlin, Coroutines, Jetpack Compose, Material 3, MVVM, `StateFlow`, Compose Navigation, Room, DataStore, and Android notification/system-settings APIs. Project source is not yet present in this GitHub repository.
 
 ## 🗺️ Future updates
 
 These are **ideas for future work, not promises or features available in the current version**:
 
+- Publish the Android project source and, when ready, a signed installable release.
 - Add a gallery of real screenshots from supported screen sizes and Android/OEM versions.
 - Expand device testing and refine OEM instructions from verified user reports.
 - Improve diagnostic report readability and add clearer explanations for unknown/unsupported checks.
